@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgb(2, 54, 70);
+}
+.navbar .navbar-brand{
+    color: white;
+}
+.navbar .nav-item .nav-link{
+    color: white;
+}
+.container .navbar-brand{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav-item{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nav-item:hover{
+    background-color:  rgb(61, 129, 156);
+    transition: 0.5s;
+    color: white;
+}
+.social{
+    gap: 40px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.social .icon{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     color: black;
+     border-radius: 50%;
+     box-shadow: 0px 1px 5px 3px greenyellow;
+     cursor: pointer;
+}
+.social:hover icon-circle{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.icon_circle{
+    position: absolute;
+    transform: transform(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    animation: iconSlide 4s infinite alternate;
+}
+.row h3{
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+.btn1{
+    height: 45px;
+    width: 130px;
+    background-color: rgb(82, 128, 14);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background-color: rgb(38, 65, 3);
+    transition: 0.5s;
+}
+.btn2{
+    height: 45px;
+    width: 130px;
+    background-color: transparent;
+    color:  rgb(82, 128, 14);
+    outline: none;
+    border: 2px solid  rgb(82, 128, 14);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn2:hover{
+    background-color: rgb(38, 65, 3);
+    transition: 0.5s;
+    color: white;
+}
+.k1 img{
+    margin-left: 30%;
+    box-shadow: 2px 2px 5px 2px grey;
+}
+.k2 img{
+    margin-top: 20%;
+    box-shadow: 4px 4px 10px 4px grey;
+}
+.k3 img{
+    margin-top: 30%;
+    box-shadow: 4px 4px 10px 4px grey;
+}
+h1{
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+.progress{
+    background-color: rgba(233,219,219);
+    justify-content: flex-start;
+    border-radius: 70px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 70px;
+    background-color: black;
+    height: 40px;
+    width: 0%;
+}
+.progress p{
+    color: white;
+    padding: 10px;
+}
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 70px;
+    background-color: black;
+    height: 40px;
+    width: 0%;
+}
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 70px;
+    background-color: black;
+    height: 40px;
+    width: 0%;
+}
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 70px;
+    background-color: black;
+    height: 40px;
+    width: 0%;
+}
+.pro-value5{
+    animation: load5 3s normal forwards;
+    border-radius: 70px;
+    background-color: black;
+    height: 40px;
+    width: 0%;
+}
+@keyframes iconSlide{
+    25%{
+        border: 2px solid green;
+        left: 120px;
+        transition: 0.4s;
+    }
+    50%{
+        border: 2px solid green;
+        left: 180px;
+        transition: 0.4s;
+    }
+    75%{
+        border: 2px solid green;
+        left: 250px;
+        transition: 0.4s;
+    }
+    100%{
+        border: 2px solid green;
+        left: 340px;
+        transition: 0.4s;
+    }
+}
+@keyframes load1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 25%;
+    }
+}
+@keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 98%;
+    }
+}
+@keyframes load4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes load5{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.btn3{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background-color: rgb(82, 128, 14);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+.btn3:hover{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(31, 29, 29);
+    transition: 0.5s;
+}
+.btn4{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 4px;
+}
+.btn4:hover{
+    background-color: rgb(82, 128, 14);
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+.card-body{
+    border: none;
+    outline: none;
+    transition: background 0.5s, transform 0.5s;
+}
+.circle{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(136, 129, 129);
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.card:hover .circle{
+    background-color: rgb(55, 65, 207);
+    color: white;
+    transition: 0.5s;
+}
+.card-body{
+    box-shadow: 2px 2px 5px 2px grey;
+}
+.card-body:hover{
+    background: rgb(2, 54, 70);
+    color: white;
+    transform: translateY(-8px);
+}
+.contact .row{
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+}
+.contact .circle:hover{
+    background-color: rgb(82, 128, 14);
+    transition: 0.4s;
+    color: white;
+}
+.contact .circle{
+    background-color: rgb(228, 228, 228);
+}
+.card-body .circle{
+    background-color: rgb(228, 228, 228);   
+}
+.form-row{
+    width: 50%;
+    margin-left: 70px;
+    padding: 0%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: rgb(2, 54, 70);
+    padding-block: 40px 60px;
+}
+.middle-footer .footer-menu{
+    display: flex;
+}
+.footer_menu_list{
+    list-style: none;
+}
+.footer_menu_list a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-inline: 20px;
+}
+.footer_menu_list a{
+    color: rgb(255, 255, 255);
+}
+.footer-social-icons{
+    gap: 40px;
+    display: flex;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+.footer-social-icons .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px 3px rgb(177, 177, 177);
+    cursor: pointer;
+}
+.icon_circles{
+    position: absolute;
+    transform: transform(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    animation: iconSlides 4s infinite alternate;
+    margin-top: -6px;
+}
+.bottom-footer{
+    font-size: 14px;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
